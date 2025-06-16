@@ -95,9 +95,9 @@ def train_clip_hybrid(model, train_dataloader, val_dataloader, device="cuda",
     criterion = CLIPLoss()
 
     # Setup directories for saving metrics and weights
-    metrics_dir = os.path.join("repository", "metrics")
-    all_weights_dir = os.path.join("repository", "all_weights")
-    checkpoints_dir = os.path.join("repository", "checkpoints")
+    metrics_dir = os.path.join("clip_ClipLoss", "repository", "metrics")
+    all_weights_dir = os.path.join("clip_ClipLoss", "repository", "all_weights")
+    checkpoints_dir = os.path.join("clip_ClipLoss", "repository", "checkpoints")
 
     os.makedirs(metrics_dir, exist_ok=True)
     os.makedirs(all_weights_dir, exist_ok=True)

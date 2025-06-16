@@ -20,7 +20,7 @@ def extract_epoch_from_path(path):
         match = re.search(r"weights_epoch_(\d+)\.pth", path)
     return int(match.group(1)) if match else None
 
-# --- NEW: This is the function you should extract/create ---
+# This is the function you should extract/create ---
 def perform_retrieval_and_save_results(
     model: FineTunedCLIP, # Expects an instance of your FineTunedCLIP model
     query_dir: str,
@@ -85,7 +85,7 @@ def perform_retrieval_and_save_results(
     )
 
     # Save Results
-    results_dir = os.path.join("repository", "results")
+    results_dir = os.path.join("clip_clipLoss", "repository", "results")
     os.makedirs(results_dir, exist_ok=True) # Ensure this directory exists
     output_path = os.path.join(results_dir, f"retrieval_results_epoch_{epoch_number}.json")
     with open(output_path, "w") as f:

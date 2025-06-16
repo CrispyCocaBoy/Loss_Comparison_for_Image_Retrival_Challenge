@@ -47,10 +47,10 @@ def check_and_train_model():
     # --- End seed setting ---
 
     # Setup model directories
-    checkpoints_dir = os.path.join("repository", "checkpoints")
-    all_weights_dir = os.path.join("repository", "all_weights")
-    metrics_dir = os.path.join("repository", "metrics")
-    retrieval_results_dir = os.path.join("repository", "results") 
+    checkpoints_dir = os.path.join("clip_ClipLoss", "repository", "checkpoints")
+    all_weights_dir = os.path.join("clip_ClipLoss", "repository", "all_weights")
+    metrics_dir = os.path.join("clip_ClipLoss", "repository", "metrics")
+    retrieval_results_dir = os.path.join("clip_ClipLoss", "repository", "results") 
     
     os.makedirs(checkpoints_dir, exist_ok=True)
     os.makedirs(all_weights_dir, exist_ok=True)
@@ -102,7 +102,7 @@ def check_and_train_model():
             print("No checkpoints found. Starting new training.")
             model = initial_model
     else:
-        print("config.force_train is True. Starting new training despite existing checkpoints.")
+        print("config.force_train is True. Starting new training")
         model = initial_model 
 
     # Create datasets and dataloaders

@@ -5,8 +5,8 @@ import csv
 from src.submit import submit
 
 # --- Configuration for directories and output file ---
-RESULTS_DIR = "repository/results"
-OUTPUT_CSV_PATH = "repository/submission_accuracy.csv" # The path for your CSV file
+RESULTS_DIR = "clip_ClipLoss/repository/results"
+OUTPUT_CSV_PATH = "clip_ClipLoss/repository/submission_accuracy.csv" # The path for your CSV file
 
 if __name__ == "__main__":
     groupname = "SimpleGuys"  
