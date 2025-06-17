@@ -1,4 +1,4 @@
-# CLIP ViT-B/32 Fine-Tuning for Image Retrieval (CLIPLoss Focus)
+# CLIP ViT-B/32 for Image Retrieval (CLIPLoss Focus)
 
 This project details the methodology and implementation for training and evaluating a fine-tuned CLIP Vision Transformer (ViT-B/32) model adapted for the task of image retrieval. This iteration focuses specifically on the application and optimization of the Contrastive Language-Image Pre-training (CLIP) Loss. The objective is to leverage the robust pre-trained capabilities of CLIP while specializing its feature representations for a retrieval dataset.
 ## 1. Overview and Architecture
