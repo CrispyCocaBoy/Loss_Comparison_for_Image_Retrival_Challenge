@@ -11,25 +11,14 @@ For more details, see the [paper.pdf](paper.pdf).
 
 The following table summarizes the main training settings and results for each loss function:
 
-```latex
-\begin{table}[!htbp]
-\centering
-\small
-\resizebox{\columnwidth}{!}{%
-\begin{tabular}{@{}lcccccc@{}}
-\toprule
-\textbf{Loss} & \textbf{Frz} & \textbf{B\_s} & \textbf{Ep} & \textbf{W\_d} & \textbf{Drp} & \textbf{Score} \\
-\midrule
-Triplet & T & 64  & 45 & 1e-4 & 0.0 & 586.53 \\
-CLIP    & T & 64  & 21 & 1e-4 & 0.3 & 546.53 \\
-ArcFace & F & 128 & 38 & 1e-4 & 0.3 & \textbf{616.98} \\
-\bottomrule
-\end{tabular}%
-}
-\caption{Compact comparison of loss functions and training settings.}
-\label{tab:loss_comparison_small}
-\end{table}
-```
+### Compact comparison of loss functions and training settings
+
+| **Loss**  | **Frz** | **B_s** | **Ep** | **W_d** | **Drp** | **Score** |
+|----------|:-------:|:-------:|:------:|:-------:|:-------:|----------:|
+| Triplet  | T       | 64      | 45     | 1e-4    | 0.0     | 586.53    |
+| CLIP     | T       | 64      | 21     | 1e-4    | 0.3     | 546.53    |
+| ArcFace  | F       | 128     | 38     | 1e-4    | 0.3     | **616.98** |
+
 
 **Legend:**  
 - **Frz**: Whether the backbone was frozen (T=True, F=False)  
